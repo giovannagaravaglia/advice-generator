@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+:root{
+--Blue200:hsl(193, 38%, 86%);
+--Green300: hsl(150, 100%, 66%);
+
+--Blue600:hsl(217, 19%, 38%);
+--Blue900:hsl(217, 19%, 24%);
+--Blue950:hsl(218, 23%, 16%);
+
+--backgroundSection: #313A49;
+--backgroundBody: #202632;
+}
+
+html {
+    font-size: 62.5%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--Blue950);
+    font-family: 'Manrope';
+    margin: 0;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+   
+}
+
+#section{
+    background-color: var(--Blue900);
+    border-radius: 1.0rem;
+    width: 90%;
+
+    position: relative;
+    padding-bottom: 3rem;
+
+    max-width: 53rem;
+
+}
+
+#adviceTitle{
+    margin: 0;
+    color:var(--Green300);
+    text-align: center;
+    text-transform: uppercase;
+    padding: 3rem 0;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+#advice{
+    margin: 0;
+    font-weight: 700;
+    color:var(--Blue200);
+    text-align: center;
+    font-size: 2.4rem;
+    padding: 0 1rem;
+
+    max-width: 44.4rem;
+    margin: auto;
+}
+
+.pattern{
+    display: block;
+    margin: 4rem auto;
+    
+}
+
+.containerBtn{
+    background-color: var(--Green300);
+    width: 5.85rem;
+    height: 5.85rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+
+    position: absolute;
+    left: 50%;
+    bottom: -60px;
+    transform: translate(-50%, -50%); /* centraliza */}
+
+    .desktop{
+        display: none;
+    }
+
+    @media (min-width:500px){
+        .mobile{
+            display: none;
+        }
+
+        .desktop{
+            display: block;
+        }
+
+        .containerBtn:hover{
+            box-shadow: 1px 1px 30px 1px var(--Green300);
+        }
+    }
+
+
+
+
+
